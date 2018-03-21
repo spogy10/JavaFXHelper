@@ -1,3 +1,5 @@
+package JavaFXHelper;
+
 import controller.AlertController;
 import controller.ConfirmationController;
 import javafx.fxml.FXMLLoader;
@@ -9,7 +11,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class JavaFXHelper {
+public class FXHelper {
     public static void sceneChanger(Object obj, Node node, String fxml) throws IOException {
         Stage stage = (Stage) node.getScene().getWindow();
         Parent root = FXMLLoader.load(obj.getClass().getResource(fxml));
