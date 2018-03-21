@@ -36,7 +36,7 @@ public class JavaFXHelper {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setTitle(tittle);
 
-        FXMLLoader loader = new FXMLLoader(obj.getClass().getResource("/view/Alert.view"));
+        FXMLLoader loader = new FXMLLoader(obj.getClass().getResource("/view/Alert.fxml"));
         Parent root = loader.load();
 
         AlertController controller = loader.getController();
