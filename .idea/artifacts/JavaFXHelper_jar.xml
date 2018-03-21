@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JavaFXHelper:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaFXHelper_jar</output-path>
+    <root id="archive" name="JavaFXHelper.jar">
+      <element id="module-output" name="JavaFXHelper" />
+    </root>
+  </artifact>
+</component>
