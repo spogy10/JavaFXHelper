@@ -55,13 +55,15 @@ public class FXHelper {
         return new Confirmation(tittle, message).display();
     }
 
-    public static void closeProgram(Object obj, Stage window) throws IOException{
+    public static boolean closeProgram(Object obj, Stage window) throws IOException{
 
         if(confirmationDialog("Close?", "Are you sure you want to exit?")){
-            System.out.print("PROGRAM CLOSED\n");
+            System.out.print("Program Terminated\n");
             alertPopup(obj, "Close", "Application will now close");
             window.close();
+            return true;
         }
+        return false;
     }
 
     private static class Confirmation{
